@@ -1,0 +1,14 @@
+[package]
+name = "clowcard"
+version = "0.0.1"
+edition = "2021"
+description = "Clow card divination in your terminal"
+authors = ["meloalright"]
+license = "MIT"
+repository = "https://github.com/meloalright/clowcard"
+keywords = ["clow-card", "divination", "terminal", "cli"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.9"
+rand = "0.8"

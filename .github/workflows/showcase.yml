@@ -1,0 +1,465 @@
+name: Showcase
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  show:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache cargo
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            target
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+
+      - name: Build
+        run: cargo build --release
+
+      - name: Random Draw
+        run: ./target/release/clowcard
+
+      - name: "01 windy"
+        run: ./target/release/clowcard -i windy
+      - name: "01 windy en"
+        run: ./target/release/clowcard -i windy --en
+      - name: "01 windy zh"
+        run: ./target/release/clowcard -i windy --zh
+      - name: "01 windy ja"
+        run: ./target/release/clowcard -i windy --ja
+      - name: "02 fly"
+        run: ./target/release/clowcard -i fly
+      - name: "02 fly en"
+        run: ./target/release/clowcard -i fly --en
+      - name: "02 fly zh"
+        run: ./target/release/clowcard -i fly --zh
+      - name: "02 fly ja"
+        run: ./target/release/clowcard -i fly --ja
+      - name: "03 shadow"
+        run: ./target/release/clowcard -i shadow
+      - name: "03 shadow en"
+        run: ./target/release/clowcard -i shadow --en
+      - name: "03 shadow zh"
+        run: ./target/release/clowcard -i shadow --zh
+      - name: "03 shadow ja"
+        run: ./target/release/clowcard -i shadow --ja
+      - name: "04 watery"
+        run: ./target/release/clowcard -i watery
+      - name: "04 watery en"
+        run: ./target/release/clowcard -i watery --en
+      - name: "04 watery zh"
+        run: ./target/release/clowcard -i watery --zh
+      - name: "04 watery ja"
+        run: ./target/release/clowcard -i watery --ja
+      - name: "05 rain"
+        run: ./target/release/clowcard -i rain
+      - name: "05 rain en"
+        run: ./target/release/clowcard -i rain --en
+      - name: "05 rain zh"
+        run: ./target/release/clowcard -i rain --zh
+      - name: "05 rain ja"
+        run: ./target/release/clowcard -i rain --ja
+      - name: "06 wood"
+        run: ./target/release/clowcard -i wood
+      - name: "06 wood en"
+        run: ./target/release/clowcard -i wood --en
+      - name: "06 wood zh"
+        run: ./target/release/clowcard -i wood --zh
+      - name: "06 wood ja"
+        run: ./target/release/clowcard -i wood --ja
+      - name: "07 jump"
+        run: ./target/release/clowcard -i jump
+      - name: "07 jump en"
+        run: ./target/release/clowcard -i jump --en
+      - name: "07 jump zh"
+        run: ./target/release/clowcard -i jump --zh
+      - name: "07 jump ja"
+        run: ./target/release/clowcard -i jump --ja
+      - name: "08 illusion"
+        run: ./target/release/clowcard -i illusion
+      - name: "08 illusion en"
+        run: ./target/release/clowcard -i illusion --en
+      - name: "08 illusion zh"
+        run: ./target/release/clowcard -i illusion --zh
+      - name: "08 illusion ja"
+        run: ./target/release/clowcard -i illusion --ja
+      - name: "09 silent"
+        run: ./target/release/clowcard -i silent
+      - name: "09 silent en"
+        run: ./target/release/clowcard -i silent --en
+      - name: "09 silent zh"
+        run: ./target/release/clowcard -i silent --zh
+      - name: "09 silent ja"
+        run: ./target/release/clowcard -i silent --ja
+      - name: "10 thunder"
+        run: ./target/release/clowcard -i thunder
+      - name: "10 thunder en"
+        run: ./target/release/clowcard -i thunder --en
+      - name: "10 thunder zh"
+        run: ./target/release/clowcard -i thunder --zh
+      - name: "10 thunder ja"
+        run: ./target/release/clowcard -i thunder --ja
+      - name: "11 sword"
+        run: ./target/release/clowcard -i sword
+      - name: "11 sword en"
+        run: ./target/release/clowcard -i sword --en
+      - name: "11 sword zh"
+        run: ./target/release/clowcard -i sword --zh
+      - name: "11 sword ja"
+        run: ./target/release/clowcard -i sword --ja
+      - name: "12 flower"
+        run: ./target/release/clowcard -i flower
+      - name: "12 flower en"
+        run: ./target/release/clowcard -i flower --en
+      - name: "12 flower zh"
+        run: ./target/release/clowcard -i flower --zh
+      - name: "12 flower ja"
+        run: ./target/release/clowcard -i flower --ja
+      - name: "13 shield"
+        run: ./target/release/clowcard -i shield
+      - name: "13 shield en"
+        run: ./target/release/clowcard -i shield --en
+      - name: "13 shield zh"
+        run: ./target/release/clowcard -i shield --zh
+      - name: "13 shield ja"
+        run: ./target/release/clowcard -i shield --ja
+      - name: "14 time"
+        run: ./target/release/clowcard -i time
+      - name: "14 time en"
+        run: ./target/release/clowcard -i time --en
+      - name: "14 time zh"
+        run: ./target/release/clowcard -i time --zh
+      - name: "14 time ja"
+        run: ./target/release/clowcard -i time --ja
+      - name: "15 power"
+        run: ./target/release/clowcard -i power
+      - name: "15 power en"
+        run: ./target/release/clowcard -i power --en
+      - name: "15 power zh"
+        run: ./target/release/clowcard -i power --zh
+      - name: "15 power ja"
+        run: ./target/release/clowcard -i power --ja
+      - name: "16 mist"
+        run: ./target/release/clowcard -i mist
+      - name: "16 mist en"
+        run: ./target/release/clowcard -i mist --en
+      - name: "16 mist zh"
+        run: ./target/release/clowcard -i mist --zh
+      - name: "16 mist ja"
+        run: ./target/release/clowcard -i mist --ja
+      - name: "17 storm"
+        run: ./target/release/clowcard -i storm
+      - name: "17 storm en"
+        run: ./target/release/clowcard -i storm --en
+      - name: "17 storm zh"
+        run: ./target/release/clowcard -i storm --zh
+      - name: "17 storm ja"
+        run: ./target/release/clowcard -i storm --ja
+      - name: "18 float"
+        run: ./target/release/clowcard -i float
+      - name: "18 float en"
+        run: ./target/release/clowcard -i float --en
+      - name: "18 float zh"
+        run: ./target/release/clowcard -i float --zh
+      - name: "18 float ja"
+        run: ./target/release/clowcard -i float --ja
+      - name: "19 erase"
+        run: ./target/release/clowcard -i erase
+      - name: "19 erase en"
+        run: ./target/release/clowcard -i erase --en
+      - name: "19 erase zh"
+        run: ./target/release/clowcard -i erase --zh
+      - name: "19 erase ja"
+        run: ./target/release/clowcard -i erase --ja
+      - name: "20 glow"
+        run: ./target/release/clowcard -i glow
+      - name: "20 glow en"
+        run: ./target/release/clowcard -i glow --en
+      - name: "20 glow zh"
+        run: ./target/release/clowcard -i glow --zh
+      - name: "20 glow ja"
+        run: ./target/release/clowcard -i glow --ja
+      - name: "21 move"
+        run: ./target/release/clowcard -i move
+      - name: "21 move en"
+        run: ./target/release/clowcard -i move --en
+      - name: "21 move zh"
+        run: ./target/release/clowcard -i move --zh
+      - name: "21 move ja"
+        run: ./target/release/clowcard -i move --ja
+      - name: "22 fight"
+        run: ./target/release/clowcard -i fight
+      - name: "22 fight en"
+        run: ./target/release/clowcard -i fight --en
+      - name: "22 fight zh"
+        run: ./target/release/clowcard -i fight --zh
+      - name: "22 fight ja"
+        run: ./target/release/clowcard -i fight --ja
+      - name: "23 loop"
+        run: ./target/release/clowcard -i loop
+      - name: "23 loop en"
+        run: ./target/release/clowcard -i loop --en
+      - name: "23 loop zh"
+        run: ./target/release/clowcard -i loop --zh
+      - name: "23 loop ja"
+        run: ./target/release/clowcard -i loop --ja
+      - name: "24 sleep"
+        run: ./target/release/clowcard -i sleep
+      - name: "24 sleep en"
+        run: ./target/release/clowcard -i sleep --en
+      - name: "24 sleep zh"
+        run: ./target/release/clowcard -i sleep --zh
+      - name: "24 sleep ja"
+        run: ./target/release/clowcard -i sleep --ja
+      - name: "25 song"
+        run: ./target/release/clowcard -i song
+      - name: "25 song en"
+        run: ./target/release/clowcard -i song --en
+      - name: "25 song zh"
+        run: ./target/release/clowcard -i song --zh
+      - name: "25 song ja"
+        run: ./target/release/clowcard -i song --ja
+      - name: "26 little"
+        run: ./target/release/clowcard -i little
+      - name: "26 little en"
+        run: ./target/release/clowcard -i little --en
+      - name: "26 little zh"
+        run: ./target/release/clowcard -i little --zh
+      - name: "26 little ja"
+        run: ./target/release/clowcard -i little --ja
+      - name: "27 mirror"
+        run: ./target/release/clowcard -i mirror
+      - name: "27 mirror en"
+        run: ./target/release/clowcard -i mirror --en
+      - name: "27 mirror zh"
+        run: ./target/release/clowcard -i mirror --zh
+      - name: "27 mirror ja"
+        run: ./target/release/clowcard -i mirror --ja
+      - name: "28 maze"
+        run: ./target/release/clowcard -i maze
+      - name: "28 maze en"
+        run: ./target/release/clowcard -i maze --en
+      - name: "28 maze zh"
+        run: ./target/release/clowcard -i maze --zh
+      - name: "28 maze ja"
+        run: ./target/release/clowcard -i maze --ja
+      - name: "29 return"
+        run: ./target/release/clowcard -i return
+      - name: "29 return en"
+        run: ./target/release/clowcard -i return --en
+      - name: "29 return zh"
+        run: ./target/release/clowcard -i return --zh
+      - name: "29 return ja"
+        run: ./target/release/clowcard -i return --ja
+      - name: "30 shot"
+        run: ./target/release/clowcard -i shot
+      - name: "30 shot en"
+        run: ./target/release/clowcard -i shot --en
+      - name: "30 shot zh"
+        run: ./target/release/clowcard -i shot --zh
+      - name: "30 shot ja"
+        run: ./target/release/clowcard -i shot --ja
+      - name: "31 sweet"
+        run: ./target/release/clowcard -i sweet
+      - name: "31 sweet en"
+        run: ./target/release/clowcard -i sweet --en
+      - name: "31 sweet zh"
+        run: ./target/release/clowcard -i sweet --zh
+      - name: "31 sweet ja"
+        run: ./target/release/clowcard -i sweet --ja
+      - name: "32 dash"
+        run: ./target/release/clowcard -i dash
+      - name: "32 dash en"
+        run: ./target/release/clowcard -i dash --en
+      - name: "32 dash zh"
+        run: ./target/release/clowcard -i dash --zh
+      - name: "32 dash ja"
+        run: ./target/release/clowcard -i dash --ja
+      - name: "33 big"
+        run: ./target/release/clowcard -i big
+      - name: "33 big en"
+        run: ./target/release/clowcard -i big --en
+      - name: "33 big zh"
+        run: ./target/release/clowcard -i big --zh
+      - name: "33 big ja"
+        run: ./target/release/clowcard -i big --ja
+      - name: "34 create"
+        run: ./target/release/clowcard -i create
+      - name: "34 create en"
+        run: ./target/release/clowcard -i create --en
+      - name: "34 create zh"
+        run: ./target/release/clowcard -i create --zh
+      - name: "34 create ja"
+        run: ./target/release/clowcard -i create --ja
+      - name: "35 change"
+        run: ./target/release/clowcard -i change
+      - name: "35 change en"
+        run: ./target/release/clowcard -i change --en
+      - name: "35 change zh"
+        run: ./target/release/clowcard -i change --zh
+      - name: "35 change ja"
+        run: ./target/release/clowcard -i change --ja
+      - name: "36 freeze"
+        run: ./target/release/clowcard -i freeze
+      - name: "36 freeze en"
+        run: ./target/release/clowcard -i freeze --en
+      - name: "36 freeze zh"
+        run: ./target/release/clowcard -i freeze --zh
+      - name: "36 freeze ja"
+        run: ./target/release/clowcard -i freeze --ja
+      - name: "37 firey"
+        run: ./target/release/clowcard -i firey
+      - name: "37 firey en"
+        run: ./target/release/clowcard -i firey --en
+      - name: "37 firey zh"
+        run: ./target/release/clowcard -i firey --zh
+      - name: "37 firey ja"
+        run: ./target/release/clowcard -i firey --ja
+      - name: "38 arrow"
+        run: ./target/release/clowcard -i arrow
+      - name: "38 arrow en"
+        run: ./target/release/clowcard -i arrow --en
+      - name: "38 arrow zh"
+        run: ./target/release/clowcard -i arrow --zh
+      - name: "38 arrow ja"
+        run: ./target/release/clowcard -i arrow --ja
+      - name: "39 bubbles"
+        run: ./target/release/clowcard -i bubbles
+      - name: "39 bubbles en"
+        run: ./target/release/clowcard -i bubbles --en
+      - name: "39 bubbles zh"
+        run: ./target/release/clowcard -i bubbles --zh
+      - name: "39 bubbles ja"
+        run: ./target/release/clowcard -i bubbles --ja
+      - name: "40 wave"
+        run: ./target/release/clowcard -i wave
+      - name: "40 wave en"
+        run: ./target/release/clowcard -i wave --en
+      - name: "40 wave zh"
+        run: ./target/release/clowcard -i wave --zh
+      - name: "40 wave ja"
+        run: ./target/release/clowcard -i wave --ja
+      - name: "41 through"
+        run: ./target/release/clowcard -i through
+      - name: "41 through en"
+        run: ./target/release/clowcard -i through --en
+      - name: "41 through zh"
+        run: ./target/release/clowcard -i through --zh
+      - name: "41 through ja"
+        run: ./target/release/clowcard -i through --ja
+      - name: "42 libra"
+        run: ./target/release/clowcard -i libra
+      - name: "42 libra en"
+        run: ./target/release/clowcard -i libra --en
+      - name: "42 libra zh"
+        run: ./target/release/clowcard -i libra --zh
+      - name: "42 libra ja"
+        run: ./target/release/clowcard -i libra --ja
+      - name: "43 snow"
+        run: ./target/release/clowcard -i snow
+      - name: "43 snow en"
+        run: ./target/release/clowcard -i snow --en
+      - name: "43 snow zh"
+        run: ./target/release/clowcard -i snow --zh
+      - name: "43 snow ja"
+        run: ./target/release/clowcard -i snow --ja
+      - name: "44 voice"
+        run: ./target/release/clowcard -i voice
+      - name: "44 voice en"
+        run: ./target/release/clowcard -i voice --en
+      - name: "44 voice zh"
+        run: ./target/release/clowcard -i voice --zh
+      - name: "44 voice ja"
+        run: ./target/release/clowcard -i voice --ja
+      - name: "45 lock"
+        run: ./target/release/clowcard -i lock
+      - name: "45 lock en"
+        run: ./target/release/clowcard -i lock --en
+      - name: "45 lock zh"
+        run: ./target/release/clowcard -i lock --zh
+      - name: "45 lock ja"
+        run: ./target/release/clowcard -i lock --ja
+      - name: "46 cloud"
+        run: ./target/release/clowcard -i cloud
+      - name: "46 cloud en"
+        run: ./target/release/clowcard -i cloud --en
+      - name: "46 cloud zh"
+        run: ./target/release/clowcard -i cloud --zh
+      - name: "46 cloud ja"
+        run: ./target/release/clowcard -i cloud --ja
+      - name: "47 dream"
+        run: ./target/release/clowcard -i dream
+      - name: "47 dream en"
+        run: ./target/release/clowcard -i dream --en
+      - name: "47 dream zh"
+        run: ./target/release/clowcard -i dream --zh
+      - name: "47 dream ja"
+        run: ./target/release/clowcard -i dream --ja
+      - name: "48 sand"
+        run: ./target/release/clowcard -i sand
+      - name: "48 sand en"
+        run: ./target/release/clowcard -i sand --en
+      - name: "48 sand zh"
+        run: ./target/release/clowcard -i sand --zh
+      - name: "48 sand ja"
+        run: ./target/release/clowcard -i sand --ja
+      - name: "49 dark"
+        run: ./target/release/clowcard -i dark
+      - name: "49 dark en"
+        run: ./target/release/clowcard -i dark --en
+      - name: "49 dark zh"
+        run: ./target/release/clowcard -i dark --zh
+      - name: "49 dark ja"
+        run: ./target/release/clowcard -i dark --ja
+      - name: "50 light"
+        run: ./target/release/clowcard -i light
+      - name: "50 light en"
+        run: ./target/release/clowcard -i light --en
+      - name: "50 light zh"
+        run: ./target/release/clowcard -i light --zh
+      - name: "50 light ja"
+        run: ./target/release/clowcard -i light --ja
+      - name: "51 twin"
+        run: ./target/release/clowcard -i twin
+      - name: "51 twin en"
+        run: ./target/release/clowcard -i twin --en
+      - name: "51 twin zh"
+        run: ./target/release/clowcard -i twin --zh
+      - name: "51 twin ja"
+        run: ./target/release/clowcard -i twin --ja
+      - name: "52 earthy"
+        run: ./target/release/clowcard -i earthy
+      - name: "52 earthy en"
+        run: ./target/release/clowcard -i earthy --en
+      - name: "52 earthy zh"
+        run: ./target/release/clowcard -i earthy --zh
+      - name: "52 earthy ja"
+        run: ./target/release/clowcard -i earthy --ja
+      - name: "53 nothing"
+        run: ./target/release/clowcard -i nothing
+      - name: "53 nothing en"
+        run: ./target/release/clowcard -i nothing --en
+      - name: "53 nothing zh"
+        run: ./target/release/clowcard -i nothing --zh
+      - name: "53 nothing ja"
+        run: ./target/release/clowcard -i nothing --ja
+
+      - name: Windy JSON
+        run: ./target/release/clowcard -i windy --json
+
+      - name: Version
+        run: ./target/release/clowcard -V
+
+      - name: Help
+        run: ./target/release/clowcard -h

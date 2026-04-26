@@ -1,0 +1,531 @@
+cards:
+  - id: windy
+    zh: "風牌"
+    en: "The Windy"
+    fortune:
+      upright: "The tide is shifting — move with it and success comes easier."
+      reversed: "Direction is lost and rhythm broken. Time to steady yourself."
+      upright_zh: "局勢正在流動，順勢而行會更容易成功。"
+      reversed_zh: "方向混亂，節奏失控，需要重新穩定。"
+      upright_ja: "流れが動いている。流れに乗れば成功しやすい。"
+      reversed_ja: "方向が乱れ、リズムが崩れている。立て直しが必要。"
+  - id: fly
+    zh: "翔牌"
+    en: "The Fly"
+    fortune:
+      upright: "Break free from limits. Head somewhere more open."
+      reversed: "Dreaming too far ahead — don't forget to land."
+      upright_zh: "適合突破限制，前往更開闊的地方。"
+      reversed_zh: "想得太遠，容易忽略眼前的落地問題。"
+      upright_ja: "制限を突破し、もっと広い場所へ飛び立つ時。"
+      reversed_ja: "遠くを見すぎて、足元の着地を忘れている。"
+  - id: shadow
+    zh: "影牌"
+    en: "The Shadow"
+    fortune:
+      upright: "Hidden factors are shaping things. Look closer."
+      reversed: "Unseen problems are holding you back. Face them, don't run."
+      upright_zh: "潛在因素正在影響局勢，需要細心觀察。"
+      reversed_zh: "被隱藏問題牽制，應該正視而不是逃避。"
+      upright_ja: "潜在的な要因が状況に影響している。注意深く観察せよ。"
+      reversed_ja: "隠れた問題に縛られている。逃げずに直視すべき。"
+  - id: watery
+    zh: "水牌"
+    en: "The Watery"
+    fortune:
+      upright: "Emotions flow smoothly. A soft approach works best now."
+      reversed: "Emotional waves are strong — don't let others pull you under."
+      upright_zh: "情緒與局勢流動順暢，適合柔性處理。"
+      reversed_zh: "情緒波動較大，容易被外界牽著走。"
+      upright_ja: "感情と状況がスムーズに流れている。柔軟な対応が吉。"
+      reversed_ja: "感情の波が大きく、外部に振り回されやすい。"
+  - id: rain
+    zh: "雨牌"
+    en: "The Rain"
+    fortune:
+      upright: "What you've built is being nourished. Let it grow naturally."
+      reversed: "Too much pressure building up. Find a way to release it."
+      upright_zh: "累積的事物正在被滋養，等待自然成長。"
+      reversed_zh: "情緒或壓力堆積過多，需要適度釋放。"
+      upright_ja: "積み重ねたものが育まれている。自然な成長を待とう。"
+      reversed_ja: "感情やプレッシャーが溜まりすぎている。適度に解放を。"
+  - id: wood
+    zh: "樹牌"
+    en: "The Wood"
+    fortune:
+      upright: "Steady growth ahead. Invest long-term and be patient."
+      reversed: "Growth is blocked. Prune the excess to move forward."
+      upright_zh: "穩定成長，適合長期投入與耐心經營。"
+      reversed_zh: "成長受阻，可能需要修剪多餘枝節。"
+      upright_ja: "安定した成長。長期的な取り組みと忍耐が実を結ぶ。"
+      reversed_ja: "成長が滞っている。余分な枝を剪定する必要がある。"
+  - id: jump
+    zh: "跳牌"
+    en: "The Jump"
+    fortune:
+      upright: "Quick action brings breakthroughs. Be decisive."
+      reversed: "Jumping blindly leads to mistakes. Check where you'll land."
+      upright_zh: "快速行動會帶來突破，適合果斷嘗試。"
+      reversed_zh: "衝動跳躍可能導致失誤，先確認落點。"
+      upright_ja: "素早い行動が突破口を開く。果敢に挑戦せよ。"
+      reversed_ja: "衝動的な飛躍はミスを招く。着地点を先に確認せよ。"
+  - id: illusion
+    zh: "幻牌"
+    en: "The Illusion"
+    fortune:
+      upright: "Imagination and sensitivity are heightened. Create freely."
+      reversed: "Illusions are misleading you. Return to the facts."
+      upright_zh: "想像力與感受力提升，適合創作與發想。"
+      reversed_zh: "容易被假象迷惑，需要回到事實本身。"
+      upright_ja: "想像力と感受性が高まっている。自由に創作を。"
+      reversed_ja: "幻に惑わされやすい。事実に立ち返ろう。"
+  - id: silent
+    zh: "靜牌"
+    en: "The Silent"
+    fortune:
+      upright: "Quiet observation reveals answers. No need to speak yet."
+      reversed: "Silence has become suppression. Say what needs to be said."
+      upright_zh: "安靜觀察會帶來答案，不必急著表態。"
+      reversed_zh: "沉默變成壓抑，該說的話需要說出口。"
+      upright_ja: "静かに観察すれば答えが見える。急いで発言する必要はない。"
+      reversed_ja: "沈黙が抑圧になっている。言うべきことは口に出そう。"
+  - id: thunder
+    zh: "雷牌"
+    en: "The Thunder"
+    fortune:
+      upright: "A sudden change brings a wake-up call — and maybe a new door."
+      reversed: "Conflict and risk are rising. Avoid reckless decisions."
+      upright_zh: "突發變化帶來提醒，也可能打開新機會。"
+      reversed_zh: "衝突與風險上升，避免魯莽決策。"
+      upright_ja: "突然の変化が気づきをもたらし、新たな扉を開くかもしれない。"
+      reversed_ja: "衝突とリスクが高まっている。無謀な決断は避けよ。"
+  - id: sword
+    zh: "劍牌"
+    en: "The Sword"
+    fortune:
+      upright: "Time for a clear-cut decision. Sever the delays and confusion."
+      reversed: "Words or choices cut too deep. You may wound others and yourself."
+      upright_zh: "適合做出明確判斷，斬斷拖延與混亂。"
+      reversed_zh: "語言或決策過於鋒利，可能傷人傷己。"
+      upright_ja: "明確な判断を下す時。迷いと混乱を断ち切れ。"
+      reversed_ja: "言葉や決断が鋭すぎる。人も自分も傷つけかねない。"
+  - id: flower
+    zh: "花牌"
+    en: "The Flower"
+    fortune:
+      upright: "A joyful atmosphere unfolds. Share and celebrate."
+      reversed: "Surface cheer may hide emptiness. Seek genuine connection."
+      upright_zh: "愉快的氛圍正在展開，適合分享與慶祝。"
+      reversed_zh: "表面的熱鬧可能掩蓋空虛，需要真誠交流。"
+      upright_ja: "楽しい雰囲気が広がっている。分かち合い、祝おう。"
+      reversed_ja: "表面の賑やかさが空虚を隠しているかもしれない。誠実な交流を。"
+  - id: shield
+    zh: "盾牌"
+    en: "The Shield"
+    fortune:
+      upright: "Set boundaries to protect what matters. Hold your ground."
+      reversed: "Over-defending blocks connection. Try letting your guard down."
+      upright_zh: "建立邊界會保護重要事物，穩住自己。"
+      reversed_zh: "防備過度可能阻礙連結，試著放鬆一點。"
+      upright_ja: "境界を設けて大切なものを守れ。地に足をつけよう。"
+      reversed_ja: "守りが過剰でつながりを妨げている。少し力を抜いてみて。"
+  - id: time
+    zh: "時牌"
+    en: "The Time"
+    fortune:
+      upright: "The right moment approaches. Patience beats force."
+      reversed: "You've stalled or missed the beat. Reprioritize."
+      upright_zh: "時機正在靠近，耐心等待比強推更有效。"
+      reversed_zh: "拖延或錯過節奏，應重新安排優先級。"
+      upright_ja: "好機が近づいている。焦るより待つ方が効果的。"
+      reversed_ja: "先延ばしやタイミングのずれ。優先順位を見直そう。"
+  - id: power
+    zh: "力牌"
+    en: "The Power"
+    fortune:
+      upright: "Strength is full. Push forward on the hard tasks."
+      reversed: "Too much force backfires. Learn to hold back."
+      upright_zh: "力量充足，適合正面推進困難任務。"
+      reversed_zh: "用力過猛會造成反效果，需要學會收斂。"
+      upright_ja: "力は十分。困難な課題に正面から挑め。"
+      reversed_ja: "力の入れすぎは逆効果。引く術を学べ。"
+  - id: mist
+    zh: "霧牌"
+    en: "The Mist"
+    fortune:
+      upright: "Things aren't clear yet. Observe the outline before you act."
+      reversed: "The fog is lifting. Truth will surface step by step."
+      upright_zh: "局勢尚未清晰，先觀察輪廓再行動。"
+      reversed_zh: "混沌正在消散，真相會逐步浮現。"
+      upright_ja: "状況はまだ不透明。輪郭を見極めてから動け。"
+      reversed_ja: "霧が晴れ始めている。真実は少しずつ姿を現す。"
+  - id: storm
+    zh: "嵐牌"
+    en: "The Storm"
+    fortune:
+      upright: "Big upheaval, but it clears the stagnation."
+      reversed: "After the storm, repair is needed. Don't escalate further."
+      upright_zh: "變動雖大，但能清理停滯的局面。"
+      reversed_zh: "風暴過後需要修復，不宜繼續激化衝突。"
+      upright_ja: "大きな変動だが、停滞を一掃できる。"
+      reversed_ja: "嵐の後は修復が必要。これ以上衝突を激化させるな。"
+  - id: float
+    zh: "浮牌"
+    en: "The Float"
+    fortune:
+      upright: "Lighten up. Things move easier than you think."
+      reversed: "Drifting too much — no roots, no real action."
+      upright_zh: "放輕一點，事情會比想像中更容易推動。"
+      reversed_zh: "過度飄浮，缺少根基與實際行動。"
+      upright_ja: "肩の力を抜こう。物事は思ったより軽く動く。"
+      reversed_ja: "漂いすぎている。根も実際の行動もない。"
+  - id: erase
+    zh: "消牌"
+    en: "The Erase"
+    fortune:
+      upright: "Remove the excess. Make room for what's next."
+      reversed: "Something important may be erased or overlooked. Pay attention."
+      upright_zh: "適合刪去多餘負擔，讓空間重新出現。"
+      reversed_zh: "重要事物可能被忽視或抹去，需要留心。"
+      upright_ja: "余分な荷物を削ぎ落とせ。新たな余白が生まれる。"
+      reversed_ja: "大切なものが見落とされ、消されるかもしれない。注意を。"
+  - id: glow
+    zh: "燈牌"
+    en: "The Glow"
+    fortune:
+      upright: "Small clues point the way. Stay perceptive."
+      reversed: "The light is too faint. Hold off on big decisions for now."
+      upright_zh: "微小的線索會帶來方向，保持感知。"
+      reversed_zh: "光太微弱，暫時不宜做重大判斷。"
+      upright_ja: "小さな手がかりが道を示す。感覚を研ぎ澄ませ。"
+      reversed_ja: "光が弱すぎる。今は大きな判断を控えよう。"
+  - id: move
+    zh: "移牌"
+    en: "The Move"
+    fortune:
+      upright: "Shift your position or method. A new path works."
+      reversed: "Too many changes cause chaos. Stop and confirm your direction."
+      upright_zh: "適合轉移位置或改變方法，新的路徑有效。"
+      reversed_zh: "頻繁變動造成混亂，先停下確認方向。"
+      upright_ja: "立場ややり方を変える好機。新しい道が有効。"
+      reversed_ja: "頻繁な変更が混乱を招いている。立ち止まって方向を確認せよ。"
+  - id: fight
+    zh: "鬥牌"
+    en: "The Fight"
+    fortune:
+      upright: "Facing the challenge unlocks your strength. Stand and fight."
+      reversed: "Pointless battles drain you. Stepping back is the smarter move."
+      upright_zh: "面對挑戰能激發力量，適合正面迎戰。"
+      reversed_zh: "無謂爭鬥正在消耗你，退一步更有利。"
+      upright_ja: "挑戦に立ち向かえば力が湧く。正面から迎え撃て。"
+      reversed_ja: "無駄な争いが消耗を招いている。一歩引く方が賢明。"
+  - id: loop
+    zh: "輪牌"
+    en: "The Loop"
+    fortune:
+      upright: "Patterns hide within repetition. Find the pattern, find the exit."
+      reversed: "Stuck in a loop without knowing it. Break the old habit."
+      upright_zh: "重複中藏著規律，找到模式就能突破。"
+      reversed_zh: "陷入循環卻不自知，需要打破舊習慣。"
+      upright_ja: "繰り返しの中に法則が隠れている。パターンを見つければ突破できる。"
+      reversed_ja: "気づかぬままループに陥っている。古い習慣を断ち切れ。"
+  - id: sleep
+    zh: "眠牌"
+    en: "The Sleep"
+    fortune:
+      upright: "Rest is strategy. Recover, then advance."
+      reversed: "Avoiding reality or stalling too long. Time to wake up."
+      upright_zh: "休息是必要策略，恢復後再前進。"
+      reversed_zh: "逃避現實或拖延過久，需要醒來行動。"
+      upright_ja: "休息は戦略。回復してから前進せよ。"
+      reversed_ja: "現実逃避や先延ばしが長すぎる。目を覚ます時だ。"
+  - id: song
+    zh: "歌牌"
+    en: "The Song"
+    fortune:
+      upright: "Expression creates resonance. Communicate and create."
+      reversed: "Your voice is off-balance — saying too much, or not meaning it."
+      upright_zh: "表達會帶來共鳴，適合溝通與創作。"
+      reversed_zh: "聲音失衡，可能說了太多或說得不真。"
+      upright_ja: "表現が共鳴を生む。コミュニケーションと創作に適した時。"
+      reversed_ja: "声のバランスが崩れている。言いすぎか、本心でないか。"
+  - id: little
+    zh: "小牌"
+    en: "The Little"
+    fortune:
+      upright: "Start small. The details will decide the outcome."
+      reversed: "Shrinking yourself too much. You underestimate your impact."
+      upright_zh: "從小處開始，細節會決定結果。"
+      reversed_zh: "過度縮小自己，低估了自身影響力。"
+      upright_ja: "小さなところから始めよ。細部が結果を決める。"
+      reversed_ja: "自分を小さくしすぎている。自身の影響力を過小評価するな。"
+  - id: mirror
+    zh: "鏡牌"
+    en: "The Mirror"
+    fortune:
+      upright: "Others or events are reflecting your true state back at you."
+      reversed: "Projection and misunderstanding grow. Separate self from other."
+      upright_zh: "他人或事件正在映照你的真實狀態。"
+      reversed_zh: "投射與誤解增加，需要分清自己與他人。"
+      upright_ja: "他者や出来事があなたの本当の姿を映し出している。"
+      reversed_ja: "投影と誤解が増えている。自分と他者を区別せよ。"
+  - id: maze
+    zh: "迷牌"
+    en: "The Maze"
+    fortune:
+      upright: "The path is complex, but patient exploration finds the exit."
+      reversed: "Overthinking makes it worse. Simplify instead of forcing through."
+      upright_zh: "雖然路徑複雜，但耐心探索會找到出口。"
+      reversed_zh: "越想越亂，應簡化問題而不是硬闖。"
+      upright_ja: "道は複雑だが、根気よく探れば出口は見つかる。"
+      reversed_ja: "考えるほど混乱する。力押しせず、問題を簡素化せよ。"
+  - id: return
+    zh: "戾牌"
+    en: "The Return"
+    fortune:
+      upright: "Looking back reveals answers. Old clues are worth revisiting."
+      reversed: "Dwelling on the past blocks progress. It's time to let go."
+      upright_zh: "回顧過去會帶來答案，舊線索值得重看。"
+      reversed_zh: "沉迷過去會阻礙前進，該放下了。"
+      upright_ja: "過去を振り返れば答えが見つかる。古い手がかりを見直す価値がある。"
+      reversed_ja: "過去に囚われると前に進めない。手放す時が来た。"
+  - id: shot
+    zh: "擊牌"
+    en: "The Shot"
+    fortune:
+      upright: "Target locked. Focus your fire for fast results."
+      reversed: "Aim is off. Rushing the shot leads to friendly fire."
+      upright_zh: "目標明確，集中火力能快速取得成果。"
+      reversed_zh: "方向偏離，急於出手反而容易誤傷。"
+      upright_ja: "目標は明確。火力を集中すれば素早く成果が出る。"
+      reversed_ja: "狙いがずれている。焦って撃てば味方を傷つける。"
+  - id: sweet
+    zh: "甘牌"
+    en: "The Sweet"
+    fortune:
+      upright: "Life needs a little sweetness. Gentleness dissolves tension."
+      reversed: "Over-indulging in pleasure. Real needs are being ignored."
+      upright_zh: "生活需要一點甜，溫柔能化解緊張。"
+      reversed_zh: "過度沉溺享樂，可能忽略真正的需求。"
+      upright_ja: "生活には少しの甘さが必要。優しさが緊張を和らげる。"
+      reversed_ja: "快楽に溺れすぎている。本当に必要なものを見失うな。"
+  - id: dash
+    zh: "驅牌"
+    en: "The Dash"
+    fortune:
+      upright: "Speed and momentum are up. Seize the fleeting chance."
+      reversed: "Running too fast loses control. Confirm direction before accelerating."
+      upright_zh: "速度與行動力提升，適合抓住短暫機會。"
+      reversed_zh: "跑太快容易失控，先確認方向再加速。"
+      upright_ja: "スピードと行動力が上がっている。一瞬のチャンスを掴め。"
+      reversed_ja: "速すぎると制御を失う。加速の前に方向を確認せよ。"
+  - id: big
+    zh: "大牌"
+    en: "The Big"
+    fortune:
+      upright: "The scope is expanding. Scale up and raise the bar."
+      reversed: "Things are blown out of proportion. You may be overestimating."
+      upright_zh: "格局正在放大，適合擴張與提升標準。"
+      reversed_zh: "事情被放大過頭，可能高估風險或自我。"
+      upright_ja: "スケールが拡大している。拡張と基準の引き上げに好機。"
+      reversed_ja: "物事が過大に膨らんでいる。リスクや自分を過大評価しているかも。"
+  - id: create
+    zh: "創牌"
+    en: "The Create"
+    fortune:
+      upright: "Ideas have the power to take shape. Start creating."
+      reversed: "Imagination runs wild or plans over-inflate. Rein it in."
+      upright_zh: "想法具有成形的力量，適合開始創作。"
+      reversed_zh: "想像失控或計畫過度膨脹，需要收束。"
+      upright_ja: "アイデアが形になる力を持っている。創作を始めよう。"
+      reversed_ja: "想像が暴走するか計画が膨らみすぎている。引き締めよ。"
+  - id: change
+    zh: "替牌"
+    en: "The Change"
+    fortune:
+      upright: "Switching roles or methods brings fresh understanding."
+      reversed: "Change brings discomfort. Clarify where you truly stand first."
+      upright_zh: "角色或方法的轉換會帶來新的理解。"
+      reversed_zh: "變動帶來不適，先釐清自己真正的位置。"
+      upright_ja: "役割ややり方を変えれば新たな理解が得られる。"
+      reversed_ja: "変化が違和感を生んでいる。まず自分の本当の立ち位置を明確に。"
+  - id: freeze
+    zh: "凍牌"
+    en: "The Freeze"
+    fortune:
+      upright: "Pausing protects the situation. Cool down, then deal with it."
+      reversed: "Relationships or progress have frozen stiff. Time to thaw."
+      upright_zh: "暫停能保護局勢，先冷靜再處理。"
+      reversed_zh: "關係或進展過度僵化，需要重新融化。"
+      upright_ja: "一時停止が状況を守る。冷静になってから対処せよ。"
+      reversed_ja: "関係や進展が凍りついている。解凍が必要。"
+  - id: firey
+    zh: "火牌"
+    en: "The Firey"
+    fortune:
+      upright: "Passion and will are burning strong. Take the initiative."
+      reversed: "Anger or restlessness rising. Don't let yourself burn out."
+      upright_zh: "熱情與意志旺盛，適合主動出擊。"
+      reversed_zh: "怒氣或焦躁上升，避免燃燒過度。"
+      upright_ja: "情熱と意志が燃えている。自ら攻めに出よ。"
+      reversed_ja: "怒りや焦燥が高まっている。燃え尽きに注意。"
+  - id: arrow
+    zh: "矢牌"
+    en: "The Arrow"
+    fortune:
+      upright: "Direction is clear. The sharper the aim, the better the hit."
+      reversed: "Targets scattered. Re-aim before you act."
+      upright_zh: "方向明確，目標越清楚越容易命中。"
+      reversed_zh: "目標分散，行動前需要重新瞄準。"
+      upright_ja: "方向は明確。狙いが定まるほど命中しやすい。"
+      reversed_ja: "目標が散らばっている。行動の前に狙いを定め直せ。"
+  - id: bubbles
+    zh: "泡牌"
+    en: "The Bubbles"
+    fortune:
+      upright: "Cleaning and organizing lightens everything."
+      reversed: "Clean on the surface, but the real problem remains. Go deeper."
+      upright_zh: "清理與整理會讓局面變得輕盈。"
+      reversed_zh: "表面乾淨但問題未解，需深入處理。"
+      upright_ja: "整理整頓すれば局面が軽くなる。"
+      reversed_ja: "表面はきれいでも問題は未解決。深く掘り下げよ。"
+  - id: wave
+    zh: "波牌"
+    en: "The Wave"
+    fortune:
+      upright: "The rhythm rises and falls naturally. Ride the wave forward."
+      reversed: "Outside turbulence hits too hard. Stabilize from within."
+      upright_zh: "節奏起伏正常，跟上波動即可前進。"
+      reversed_zh: "被外界波動影響太深，需要穩住內在。"
+      upright_ja: "リズムの上下は自然なもの。波に乗って前へ進め。"
+      reversed_ja: "外部の波に影響されすぎている。内面を安定させよ。"
+  - id: through
+    zh: "拔牌"
+    en: "The Through"
+    fortune:
+      upright: "You can pass through the barrier. Find the unconventional way."
+      reversed: "Dodging boundaries or rules will cost you later."
+      upright_zh: "可以穿越阻礙，找到不尋常的通道。"
+      reversed_zh: "逃避邊界或規則，可能帶來後續代價。"
+      upright_ja: "障壁を突破できる。型破りな道を見つけよ。"
+      reversed_ja: "境界やルールを避ければ、後で代償を払うことになる。"
+  - id: libra
+    zh: "秤牌"
+    en: "The Libra"
+    fortune:
+      upright: "Fairness and balance are key. Make an objective call."
+      reversed: "Imbalance or bias is skewing the outcome. Recalibrate."
+      upright_zh: "公平與平衡是關鍵，適合做客觀判斷。"
+      reversed_zh: "失衡或偏見正在影響結果，需要校準。"
+      upright_ja: "公平とバランスが鍵。客観的な判断を下せ。"
+      reversed_ja: "不均衡や偏見が結果を歪めている。再調整が必要。"
+  - id: snow
+    zh: "雪牌"
+    en: "The Snow"
+    fortune:
+      upright: "Stillness and purity bring clarity. Slow down."
+      reversed: "Coldness and distance are growing. Rebuild some warmth."
+      upright_zh: "安靜與純粹會帶來清晰感，慢下來。"
+      reversed_zh: "冷淡或疏離增加，需要重新建立溫度。"
+      upright_ja: "静けさと純粋さが明晰さをもたらす。ペースを落とせ。"
+      reversed_ja: "冷淡さや距離感が増している。温もりを取り戻そう。"
+  - id: voice
+    zh: "聲牌"
+    en: "The Voice"
+    fortune:
+      upright: "Your voice matters. Speak your real thoughts."
+      reversed: "Your voice is suppressed or misused. Find your own tone again."
+      upright_zh: "你的聲音很重要，適合表達真正想法。"
+      reversed_zh: "聲音被壓抑或誤用，需要找回自己的語調。"
+      upright_ja: "あなたの声は重要だ。本当の考えを伝えよう。"
+      reversed_ja: "声が抑えられているか、誤った使い方をしている。自分の声を取り戻せ。"
+  - id: lock
+    zh: "錠牌"
+    en: "The Lock"
+    fortune:
+      upright: "Guard the secret and the boundary. No need to open everything yet."
+      reversed: "Too much lockdown causes stagnation. Find the key."
+      upright_zh: "守住秘密與邊界，暫時不必全部打開。"
+      reversed_zh: "封閉過度造成停滯，需要找到解鎖方式。"
+      upright_ja: "秘密と境界を守れ。すべてを開く必要はまだない。"
+      reversed_ja: "閉ざしすぎて停滞している。鍵を見つけよ。"
+  - id: cloud
+    zh: "雲牌"
+    en: "The Cloud"
+    fortune:
+      upright: "Things are soft and unsettled. Stay flexible."
+      reversed: "Ideas drift and won't land. Make them concrete."
+      upright_zh: "局勢柔軟而未定，保持彈性會有好處。"
+      reversed_zh: "想法飄散難以落地，需要具體化。"
+      upright_ja: "状況は柔らかく未確定。柔軟さを保つのが吉。"
+      reversed_ja: "考えが散漫で着地しない。具体化が必要。"
+  - id: dream
+    zh: "夢牌"
+    en: "The Dream"
+    fortune:
+      upright: "Intuition and dreams are pointing the way. Listen to inner signals."
+      reversed: "Fantasy and reality are tangled. Verify before you believe."
+      upright_zh: "直覺與夢想正在提示方向，留意內在訊號。"
+      reversed_zh: "幻想與現實混雜，需要驗證再相信。"
+      upright_ja: "直感と夢が方向を示している。内なるシグナルに耳を傾けよ。"
+      reversed_ja: "幻想と現実が混在している。信じる前に検証せよ。"
+  - id: sand
+    zh: "砂牌"
+    en: "The Sand"
+    fortune:
+      upright: "Things shift like sand. Flexibility is everything."
+      reversed: "The foundation is unstable. Keep stacking and it collapses."
+      upright_zh: "局勢像沙一樣變動，靈活調整最重要。"
+      reversed_zh: "基礎不穩，若繼續堆疊容易崩塌。"
+      upright_ja: "状況は砂のように変わる。柔軟な対応が何より大切。"
+      reversed_ja: "土台が不安定。積み上げ続ければ崩れる。"
+  - id: dark
+    zh: "暗牌"
+    en: "The Dark"
+    fortune:
+      upright: "Answers hide in the unknown. Look inward."
+      reversed: "Fear magnifies the darkness. Find something solid to hold onto."
+      upright_zh: "未知中藏著答案，適合向內探索。"
+      reversed_zh: "恐懼放大了黑暗，需要尋找具體支點。"
+      upright_ja: "未知の中に答えが潜む。内面を探索せよ。"
+      reversed_ja: "恐怖が闇を増幅している。確かな拠り所を見つけよ。"
+  - id: light
+    zh: "光牌"
+    en: "The Light"
+    fortune:
+      upright: "Light illuminates the path. Truth becomes clear."
+      reversed: "Chasing only the bright side — you may miss what the shadow tells you."
+      upright_zh: "光正在照亮方向，真相會逐漸清楚。"
+      reversed_zh: "過度追求正面，可能忽略陰影中的訊息。"
+      upright_ja: "光が道を照らしている。真実は次第に明らかになる。"
+      reversed_ja: "明るい面ばかり追うと、影の中のメッセージを見落とす。"
+  - id: twin
+    zh: "雙牌"
+    en: "The Twin"
+    fortune:
+      upright: "Partnership or contrast brings strength."
+      reversed: "Both sides are off-balance or holding each other back. Realign."
+      upright_zh: "合作或對照關係會帶來力量。"
+      reversed_zh: "雙方失衡或互相牽制，需要重新協調。"
+      upright_ja: "協力や対比が力をもたらす。"
+      reversed_ja: "双方のバランスが崩れ、互いに足を引っ張っている。再調整を。"
+  - id: earthy
+    zh: "地牌"
+    en: "The Earthy"
+    fortune:
+      upright: "The foundation is solid. Execute plans and build for the long term."
+      reversed: "Too rigid or heavy. Loosen the structure."
+      upright_zh: "基礎穩固，適合落實計畫與長期建設。"
+      reversed_zh: "過度固執或沉重，需要讓結構鬆動。"
+      upright_ja: "基盤は盤石。計画を実行し、長期的に築き上げよ。"
+      reversed_ja: "頑固すぎるか重すぎる。構造を緩める必要がある。"
+  - id: nothing
+    zh: "無牌"
+    en: "The Nothing"
+    fortune:
+      upright: "Emptiness is not failure — it is space for a fresh start."
+      reversed: "Fear of loss keeps you holding on. Accept the void."
+      upright_zh: "空白不是失敗，而是重新開始的空間。"
+      reversed_zh: "害怕失去讓你不敢放手，需要接受空缺。"
+      upright_ja: "空白は失敗ではない。再出発のための余白だ。"
+      reversed_ja: "失うことへの恐れが手放すことを阻んでいる。空白を受け入れよ。"
