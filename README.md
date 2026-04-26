@@ -7,14 +7,13 @@ Clow card divination in your terminal.
 ### Homebrew
 
 ```
-brew tap meloalright/tap
-brew install clowcard
+brew install meloalright/tap/clowcard
 ```
 
 ### Cargo
 
 ```
-cargo install clowcard
+cargo install --git https://github.com/meloalright/clowcard
 ```
 
 ### Binary
