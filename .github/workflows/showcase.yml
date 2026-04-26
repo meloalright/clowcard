@@ -457,6 +457,12 @@ jobs:
 
       - name: Windy JSON
         run: ./target/release/clowcard -i windy --json
+      - name: Windy JSON en
+        run: ./target/release/clowcard -i windy --json --en
+      - name: Windy JSON zh
+        run: ./target/release/clowcard -i windy --json --zh
+      - name: Windy JSON ja
+        run: ./target/release/clowcard -i windy --json --ja
 
       - name: Version
         run: ./target/release/clowcard -V
