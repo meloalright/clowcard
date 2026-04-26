@@ -48,10 +48,16 @@ pub fn print_card_json(card: &Card, reversed: bool, lang: &str) {
     };
     let position = if reversed { "reversed" } else { "upright" };
     let fortune = if reversed { reversed_text } else { upright };
-    println!(
-        r#"{{"id":"{}","zh":"{}","en":"{}","position":"{}","upright":"{}","reversed":"{}","fortune":"{}"}}"#,
-        card.id, card.zh, card.en, position, upright, reversed_text, fortune
-    );
+    let obj = serde_json::json!({
+        "id": card.id,
+        "zh": card.zh,
+        "en": card.en,
+        "position": position,
+        "upright": upright,
+        "reversed": reversed_text,
+        "fortune": fortune,
+    });
+    println!("{}", obj);
 }
 
 pub fn print_card_both(card: &Card, lang: &str) {

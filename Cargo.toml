@@ -10,5 +10,6 @@ keywords = ["clow-card", "divination", "terminal", "cli"]
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }
+serde_json = "1"
 serde_yaml = "0.9"
 rand = "0.8"
