@@ -7,7 +7,7 @@ Clow card divination in your terminal.
 ### Homebrew
 
 ```
-brew tap meloalright/monkey-tap
+brew tap meloalright/tap
 brew install clowcard
 ```
 
